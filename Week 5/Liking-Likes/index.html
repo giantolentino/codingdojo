@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			function change_btn() {
+				document.getElementById("btn").innerHTML = "Logout";
+				console.log("changed text");
+			}
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="nav">
+				<h1 class="nav-title">Network</h1>
+			</div>
+		</div>
+		<div class="container">
+			<h1 id="your-feed">Your Feed</h1>
+			<div class="row">
+				<!-- left column -->
+				<div class="col">
+					<div class="user-card">
+						<div class="card-body">
+							<img src="user-circle.png" height="100px" />
+							<p><a href="#">Add An Avatar</a></p>
+							<h2>James Doe</h2>
+						</div>
+					</div>
+				</div>
+
+				<!-- right column -->
+					<div class="col-2">
+						<div class="card">
+							<div class="row">
+								<div class="col">
+									<div class="likes-row">
+										<span class="start"><h2>Neil M</h2></span>
+										<span class="end">
+											<p><span id="likes">9</span> like(s)</p>
+											<button id="like-btn-1" class="like-btn">
+												Like
+											</button>
+										</span>
+									</div>
+									<span>I just set up this new discord bot, let me know what you all think. </span>
+									<span><a href="#">link</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="row">
+								<div class="col">
+									<div class="likes-row">
+										<span class="start"><h2>Nichole K</h2></span>
+										<span class="end">
+											<p><span id="likes-2">12</span> like(s)</p>
+											<button id="like-btn-2" class="like-btn">
+												Like
+											</button>
+										</span>
+									</div>
+									<span>Just finished my <span><a href="#">next comic</a></span> check it out. </span>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="row">
+								<div class="col">
+									<div class="likes-row">
+										<span class="start"><h2>Jim R</h2></span>
+										<span class="end">
+											<p><span id="likes-3">9</span> like(s)</p>
+											<button id="like-btn-3" class="like-btn">
+												Like
+											</button>
+										</span>
+									</div>
+									<span>I cant stop listening to the <span><a href="#">new album.</a></span> Who else is listening to it?</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

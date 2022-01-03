@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DojoWeather</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- navbar -->
+		<div class="nav">
+			<div class="flex-container">
+				<h1 class="nav-title">DojoWeather</h1>
+				<ul class="nav-links">
+					<li><a href="#" onclick="loadingAlert()">Burbank</a></li>
+					<li><a href="#" onclick="loadingAlert()">Chicago</a></li>
+					<li><a href="#" onclick="loadingAlert()">Dallas</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="city">
+			<span><h1>San Jose</h1></span>
+			<span>
+				<form action="/action_page.php">
+					<label for="unit">select temperature in:</label>
+					<select name="unit" id="unit">
+						<option value="c">°C</option>
+						<option value="f">°F</option>
+					</select>
+				</form>
+			</span>
+		</div>
+
+		<!-- main -->
+		<div class="flex-container main">
+			<!-- Today -->
+			<div class="col">
+				<div class="card">
+					<div class="centered">
+						<h2>Today</h2>
+						<img src="assets/some_rain.png" class="weather-icon" />
+						<p>some rain</p>
+					</div>
+					<div class="temps">
+						<span><h3 class="red-temp"> <span id="today-red-c">24</span>°</h3></span>
+						<span><h3 class="blue-temp"> <span id="today-blue-c">18</span>°</h3></span>
+					</div>
+				</div>
+			</div>
+			<!-- Tomorrow -->
+			<div class="col">
+				<div class="card">
+					<div class="centered">
+						<h2>Tomorrow</h2>
+						<img src="assets/some_sun.png" class="weather-icon" />
+						<p>some sun</p>
+					</div>
+					<div class="temps">
+						<span><h3 class="red-temp"> <span id="tomorrow-red-c">27</span>°</h3></span>
+						<span><h3 class="blue-temp"> <span id="tomorrow-blue-c">19</span>°</h3></span>
+					</div>
+				</div>
+			</div>
+			<!-- Friday -->
+			<div class="col">
+				<div class="card">
+					<div class="centered">
+						<h2>Friday</h2>
+						<img src="assets/some_clouds.png" class="weather-icon" />
+						<p>some clouds</p>
+					</div>
+					<div class="temps">
+						<span><h3 class="red-temp"> <span id="friday-red-c">21</span>°</h3></span>
+						<span><h3 class="blue-temp"> <span id="friday-blue-c">16</span>°</h3></span>
+					</div>
+				</div>
+			</div>
+			<!-- Saturday -->
+			<div class="col">
+				<div class="card">
+					<div class="centered">
+						<h2>Saturday</h2>
+						<img src="assets/some_sun.png" class="weather-icon" />
+						<p>some sun</p>
+					</div>
+					<div class="temps">
+						<span><h3 class="red-temp"> <span id="saturday-red-c">26</span>°</h3></span>
+						<span><h3 class="blue-temp"> <span id="saturday-blue-c">21 </span>°</h3></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="cookie-box">
+				<span><img src="assets/cookie.png"></span>
+				<span style="width: 70%"><h1>Stop! Cookie time</h1><h2>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#" onclick="loadingAlert()">Read More.</a></h2></span>
+				<span><button class="btn" onclick="hideCookieBox()">I Accept </button></span>
+			</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

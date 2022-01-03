@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #f3f3f3;
+}
+
+.top {
+	background-color: #333333;
+}
+
+.nav {
+	width: 1080px;
+	margin: 0 auto;
+	color: #ffffff;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav input[type="text"] {
+	padding: 6px;
+	border: none;
+	width: 600px;
+	font-size: 18px;
+}
+
+.nav-title {
+	margin-left: 20px;
+}
+
+#btn {
+	margin-right: 20px;
+	height: 35px;
+	width: 100px;
+	background-color: #17a2b8;
+	color: #ffffff;
+	border: none;
+	font-size: 16px;
+	box-shadow: 5px 5px #000000;
+}
+
+#your-feed {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+}
+
+.col,
+.col-2 {
+	margin: 10px;
+	padding: 10px;
+	flex: 1;
+}
+
+.col-2 {
+	flex: 3;
+}
+
+.flex-container {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-card,
+.card {
+	width: 100%;
+	background-color: #fff;
+	border: 2px solid #999;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	overflow: hidden;
+}
+
+.user-card .card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body p {
+	margin-top: 20px;
+}
+
+/* .card-body .row .col-2 {
+	display: flex;
+	align-items: center;
+} */
+
+.likes-row {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.start,
+.end {
+	display: flex;
+	align-items: center;
+}
+
+.end {
+	display: flex;
+	justify-content: space-around;
+}
+
+.like-btn {
+	margin-left: 30px;
+	padding: 3px;
+	height: auto;
+	width: auto;
+	background-color: limegreen;
+	color: #000000;
+	border: none;
+	font-size: 16px;
+	box-shadow: 3px 3px #000000;
+}

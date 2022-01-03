@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			function change_btn() {
+				document.getElementById("btn").innerHTML = "Logout";
+				console.log("changed text");
+			}
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="nav">
+				<h1 class="nav-title">Dojonary</h1>
+				<input type="text" placeholder="Search" />
+				<button id="btn" onclick="change_btn()">Login</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- left column -->
+				<div class="col-2">
+					<div class="definition-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<h1>Ninja</h1>
+									<p><em>noun</em></p>
+									<p>Plural: <em>ninjas</em></p>
+									<button class="likes-btn" onclick="alert('Ninja was liked')">
+										13 Likes
+									</button>
+								</div>
+								<div class="col-2">
+									<span>
+										A practioner skilledin the
+										<span><a href="#">Japanese</a></span> art of
+										<span><a href="#">ninjustsu</a></span>
+										.
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="definition-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<h1>Ninja</h1>
+									<p><em>noun</em></p>
+									<p>Plural: <em>ninjas</em></p>
+									<button class="likes-btn" onclick="alert('Ninja was liked')">
+										37 Likes
+									</button>
+								</div>
+								<div class="col-2">
+									<span>
+										A
+										<span><a href="#">programmer</a></span> who breaks downs
+										probelms with <span><a href="#">zen</a></span
+										>-like focus.
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- right column -->
+				<div class="col">
+					<div class="card">
+						<div class="row">
+							<div class="col">
+								<h2>Dojonary is</h2>
+								<h2>defined by YOU</h2>
+								<button id="define-btn" onclick="style.display = 'none'">
+									Add Definition
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

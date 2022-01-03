@@ -1,0 +1,26 @@
+
+
+.search {
+background-color: white;
+padding: 0.5em 2em;
+border-radius: 1.5em;
+color: mediumaquamarine;
+border: 2px solid mediumaquamarine;
+margin: 0.7em;
+}
+
+.plus {
+border-radius: 50%;
+color: white;
+background-color: mediumaquamarine;
+border: 2px solid mediumaquamarine;
+margin: 0.7em;
+}
+
+.create {
+margin: 0.7em;
+color: white;
+background-color: royalblue;
+border: 2px solid black;
+box-shadow: 2px 2px black;
+}

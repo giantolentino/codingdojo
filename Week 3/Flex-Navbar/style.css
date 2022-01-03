@@ -1,0 +1,49 @@
+.nav {
+	max-width: 750px;
+	/* max-height: 50px; */
+	background-color: darkslategray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-title {
+	padding-left: 10px;
+	color: white;
+}
+
+.nav-links {
+	padding-right: 10px;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-links li {
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.nav-links li a:link {
+	color: grey;
+	text-decoration: none;
+}
+
+.nav-links li a:visited {
+	color: grey;
+	text-decoration: none;
+}
+
+.nav-links .active:link {
+	color: white;
+}
+
+.nav-links .active:visited {
+	color: white;
+}
+
+.nav-links .btn {
+	background-color: turquoise;
+	border: 2px solid black;
+	box-shadow: 2px 2px black;
+}
